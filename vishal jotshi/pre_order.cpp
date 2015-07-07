@@ -1,6 +1,6 @@
 /* Author - Vishal jotshi
 	GS-1010
-	IDM
+	CIS
 */
 
 #include <stdlib.h>
