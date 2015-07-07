@@ -1,4 +1,5 @@
-//Vivek
+/* Author -Yugesh Bhosale GS-1013
+*/
 
 #include <stdlib.h>
 #include <stdio.h>

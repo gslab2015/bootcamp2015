@@ -1,4 +1,7 @@
-//Vivek
+/* Author - Vishal jotshi
+	GS-0998
+	IDM
+*/
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -56,7 +59,7 @@ void iterativePreorder(node *root)
             nodeStack.push(node->left);
     }
 }
-
+//here is the change made by vishal jotshi in the following programme
 // Driver program to test above functions
 int main()
 {

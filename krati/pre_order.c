@@ -1,12 +1,12 @@
-//Vivek
-
+/* Author-Krati Jain
+*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
 #include <stack>
-
+ 
 using namespace std;
-
+ 
 /* A binary tree node has data, left child and right child */
 struct node
 {
@@ -14,7 +14,7 @@ struct node
     struct node* left;
     struct node* right;
 };
-
+ 
 /* Helper function that allocates a new node with the given data and
    NULL left and right  pointers.*/
 struct node* newNode(int data)
@@ -25,18 +25,18 @@ struct node* newNode(int data)
     node->right = NULL;
     return(node);
 }
-
+ 
 // An iterative process to print preorder traversal of Binary tree
 void iterativePreorder(node *root)
 {
     // Base Case
     if (root == NULL)
        return;
-
+ 
     // Create an empty stack and push root to it
     stack<node *> nodeStack;
     nodeStack.push(root);
-
+ 
     /* Pop all items one by one. Do following for every popped item
        a) print it
        b) push its right child
@@ -48,7 +48,7 @@ void iterativePreorder(node *root)
         struct node *node = nodeStack.top();
         printf ("%d ", node->data);
         nodeStack.pop();
-
+ 
         // Push right and left children of the popped node to stack
         if (node->right)
             nodeStack.push(node->right);
@@ -56,11 +56,11 @@ void iterativePreorder(node *root)
             nodeStack.push(node->left);
     }
 }
-
+ 
 // Driver program to test above functions
 int main()
 {
-    
+   
   struct node *root = newNode(10);
   root->left        = newNode(8);
   root->right       = newNode(2);
