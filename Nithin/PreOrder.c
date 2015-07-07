@@ -1,4 +1,7 @@
-//Vivek
+/* Author - Sarafarazahmad Momin
+	GS-0998
+	IDM
+*/
 
 #include <stdlib.h>
 #include <stdio.h>
