@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//Create binary tree and perform recursive traversals
+//Create binary tree and perform recursive and non-recursive traversals
 
 class node;
 
@@ -66,6 +66,11 @@ node * Stack :: pop()
   return temp;
 }
 
+
+//a node is a composite type that a 
+//tree uses for storage of data and 
+//for connections
+
 class tree;//a forward declaration
 
 class node
@@ -119,6 +124,12 @@ class tree //a collection of dynamicall created nodes
 	void rInorder(node *);
 	void rPreorder(node *);
 	void rPostorder(node *);
+
+	
+	//non recursive traversal methods
+	void inorder();
+	void preorder();
+	void postorder();
 	
 };
 
@@ -261,10 +272,13 @@ int main()//prg starts here
 	tree t;
 	t.create();
 	
+	t.inorder();
 	t.rec_inorder();
 	
+	t.preorder();
 	t.rec_preorder();
 	
+	t.postorder();
 	t.rec_postorder();
 	return 0;
 }
