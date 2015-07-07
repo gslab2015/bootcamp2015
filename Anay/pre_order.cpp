@@ -1,11 +1,15 @@
-#include <iostream>
+void listInPreOrder(node* hd){
+if(hd != NULL) {
+        printf("%d, ", hd->value);
+        listInPreOrder(hd->left);
+        listInPreOrder(hd->right);
+    }
+}
 
-using namespace std;
-
-int main(int args, char ** argv)
-{
-	cout << "Pre-order .. it's not in burhar's release brance" << endl ;
-
-	return 0;
-
+void listInInOrder(node* hd){
+if(hd != NULL) {
+        listInInOrder(hd->left); 
+        printf("%d, ", hd->value);
+        listInInOrder(hd->right);
+    }
 }
