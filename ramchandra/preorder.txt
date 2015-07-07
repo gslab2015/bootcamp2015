@@ -1,0 +1,16 @@
+void Preorder(struct node node)
+{
+     if (node == NULL)
+          return;
+ 
+      first print data of node 
+     printf(%d , node-data);  
+ 
+      then recur on left sutree 
+     printPreorder(node-left);  
+
+
+ 
+      now recur on right subtree 
+     printPreorder(node-right);
+}    
